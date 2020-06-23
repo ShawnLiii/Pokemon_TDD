@@ -1,0 +1,6 @@
+framework module Pods_Pokemon_TDD_Pokemon_TDDUITests {
+  umbrella header "Pods-Pokemon_TDD-Pokemon_TDDUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

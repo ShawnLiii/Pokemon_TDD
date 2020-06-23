@@ -1,0 +1,6 @@
+framework module Pods_Pokemon_TDDTests {
+  umbrella header "Pods-Pokemon_TDDTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

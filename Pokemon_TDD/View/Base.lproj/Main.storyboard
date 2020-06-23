@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7eq-tv-e6W">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16097"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pokemon Controller-->
+        <scene sceneID="WCt-ET-CHn">
+            <objects>
+                <tableViewController storyboardIdentifier="PokemonController" id="7eq-tv-e6W" customClass="PokemonController" customModule="Pokemon_TDD" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TdI-Ht-0HI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokeCell" rowHeight="130" id="zQo-cq-wR8" customClass="PokeCell" customModule="Pokemon_TDD" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="130"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zQo-cq-wR8" id="Dpn-Nc-ygA">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h8i-Rn-nYZ">
+                                            <rect key="frame" x="20" y="11" width="374" height="108"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="108" id="WY5-Ac-44p"/>
+                                                <constraint firstAttribute="width" constant="374" id="bxJ-KG-bxh"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="h8i-Rn-nYZ" firstAttribute="leading" secondItem="Dpn-Nc-ygA" secondAttribute="leadingMargin" id="0Sr-vw-2Nc"/>
+                                        <constraint firstItem="h8i-Rn-nYZ" firstAttribute="top" secondItem="Dpn-Nc-ygA" secondAttribute="topMargin" id="bck-bV-Vqs"/>
+                                        <constraint firstItem="h8i-Rn-nYZ" firstAttribute="bottom" secondItem="Dpn-Nc-ygA" secondAttribute="bottomMargin" id="mV8-yg-X5x"/>
+                                        <constraint firstItem="h8i-Rn-nYZ" firstAttribute="trailing" secondItem="Dpn-Nc-ygA" secondAttribute="trailingMargin" id="vyD-cc-dn5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7eq-tv-e6W" id="HhK-cL-kG7"/>
+                            <outlet property="delegate" destination="7eq-tv-e6W" id="of2-eg-SOm"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xur-yU-fng" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="35.491071428571423"/>
+        </scene>
+    </scenes>
+</document>
